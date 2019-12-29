@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <div class="wrapper">
+
+        {% for item in items %}
+
+            <div class="base" id="xxx">
+                <div id="destaque-modulo">
+                    <img src="{{item.image}}" alt="{{item.title}}">
+                </div>
+
+                <div class="base-titulo">
+                    <h2 id="titulo">{{item.title}}</h2>
+                    <h3 id="author">{{item.author}}</h3>
+                    <h4>Ingredientes:</h4>
+                </div>
+
+                <div id="ingredients" class="recipent">
+                    <ul>
+                        {% for ingredients in item.ingredients %}
+                            <li>{{ingredients}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                    <h4>Preparação:</h4>
+                    
+                <div id="preparation" class="recipent">
+                    <ul>
+                        {% for preparation in item.preparation %}
+                            <li>{{preparation}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                    <h4>Informação:</h4>
+                <div id="information" class="recipent">
+                    <ul>
+                        {% for information in item.information %}
+                            {{information}}
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

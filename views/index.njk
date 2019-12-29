@@ -1,0 +1,69 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="wrapper">
+    <div id="destaque">
+        <h1>As melhores receitas</h1>
+        <h2>Aprenda a construir os melhores pratos
+            com receitas criadas por profissionais
+            do mundo inteiro.
+        </h2>
+        <img src="/img/chef.png" alt="Chef">
+    </div>
+
+    <main>
+        <h2>Mais acessadas</h2>
+        <div class="content">
+            <div class="flip">
+                <img src="/img/asinhas.png" alt="asinha">
+                <h3>Asinhas de frango ao barbecue</h3>
+                <p>por Gleydson Steroski</p>
+            </div>
+            <div class="flip">
+                <img src="/img/burger.png" alt="burguer">
+                <h3>Triplo bacon burger</h3>
+                <p>por Thiago Fambre</p>
+            </div>
+            <div class="flip">
+                <img src="/img/doce.png" alt="doce">
+                <h3>Docinhos pão-do-céu</h3>
+                <p>por Anderson Negocio</p>
+            </div>
+            <div class="flip">
+                <img src="/img/espaguete.png" alt="espaguete">
+                <h3>Espaguete ao alho</h3>
+                <p>por Sinara Pé inchado</p>
+            </div>
+            <div class="flip">
+                <img src="/img/lasanha.png" alt="lasanha">
+                <h3>Lasanha mac n’ cheese</h3>
+                <p>por Sonyelle Rabu-genta</p>
+            </div>
+            <div class="flip">
+                <img src="/img/pizza.png" alt="pizza">
+                <h3>Pizza 4 estações</h3>
+                <p>por Diego da Vitoria</p>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+   <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <a class="close-modal">
+                <i class="material-icons">close</i>
+                </a>
+                <img src="/img/porco.png" alt="">
+                <h3>Porco estações ao Caramelo</h3>
+                <p>por Chitz kintes</p>
+                
+                <div class="modal-content">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

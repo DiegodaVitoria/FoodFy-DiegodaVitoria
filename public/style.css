@@ -1,0 +1,226 @@
+
+body, div{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #fffef7;
+}
+
+.wrapper{
+   width: 940px;
+   max-width: 940px;
+   margin: 0 auto; 
+}
+
+#logo{
+    display: block;
+    position: absolute;
+    z-index: 999;
+}
+
+#menu {
+    position: relative;
+    text-align: center;
+    margin: 30px 0px;
+
+}
+ul{
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+ul li a{
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #111111;
+}
+
+#destaque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #FBDFDB ;
+    height: 366px;
+    max-width: 940px;
+    border-radius: 30px;
+    opacity: 100%;
+    margin: auto;
+    padding-left: 66px;
+}
+
+#destaque h1{
+    font-size: 32px;
+    color: #111111;
+    top: 210px;
+    position: absolute;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-top: -26px;
+}
+
+#destaque h2{
+    font-size: 18px;
+    color: #000000;
+    opacity: 0.7;
+    font-weight: normal;
+    align-self: center;
+
+
+}
+
+#destaque img{
+    padding-top: 66px;
+    justify-self: center;
+}
+main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main h2{
+    font-size: 24px;
+    color: #111111;
+    margin-left: 10px; 
+}
+
+main .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 20px;
+}
+
+.card:hover {
+    background-color: #FBDFDB ;
+    border-radius: 15px;
+    display: grid;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.flip:hover {
+    background-color: #FBDFDB ;
+    border-radius: 15px;
+    display: grid;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+main .content img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+main .content h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main .content p{
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+footer{
+    background: #EEEEEE;
+    width: 100%;
+    height: 80px;
+    padding: 23px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ==>SOBRE<== */
+
+.sobre {
+    margin: 50px 0px;
+}
+
+.sobre h1{
+    font-size: 24px;
+    color: #111111;
+}
+
+.sobre h2{
+    font-size: 18px;
+    color: #666666;
+    line-height: 28px;
+    font-style: normal;
+
+}
+
+/* ==>modulo<== */
+
+.base ul li {
+    display: grid;
+    padding-top: 5px;
+    
+}
+.recipent ul {
+    padding: 0 40px;
+    letter-spacing: normal;
+}
+
+
+
+/* ==>Modal<== */
+
+
+.modal-overlay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: #FBDFDB ;
+    width: 80%;
+    max-width: 660px;
+    height: 450px;
+    margin: 25vh auto;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.modal-content{
+    margin: 15px 15px;
+    background-color: transparent;
+
+}
+.modal-content img{
+    width: 94%;
+    position: relative;
+    margin: 20px 20px 15px;
+    border-radius: 25px;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.modal .close-modal {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* ==>Modal."active"<== */
+
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
