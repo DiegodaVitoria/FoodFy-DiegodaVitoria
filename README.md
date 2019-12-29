@@ -1,6 +1,9 @@
 # FoodFy
-Site de Culinaria, criado no curso da RocktSeat
+Site de Culinária, criado no curso da RocktSeat
 
 HTML / CSS / JavaScrip
+
+![Optional Text](/foodfy.gif)
+
 
 
